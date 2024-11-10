@@ -7,6 +7,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
+
 /* NAVBAR */
 nav {
     position: fixed;
@@ -62,12 +63,60 @@ nav .menu li a {
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+nav .menu li a:hover {
+    color: #FFD700; /* Gold/Yellow color for hover */
+    text-decoration: underline; /* Optional: underline effect */
+}
+
+@media (max-width: 900px) {
+    /* Hide logo image on smaller screens */
+    .logo img {
+        display: none;
+    }
+
+    /* Adjust navbar layout */
+    nav .navbar {
+        display: flex;  /* Make the navbar a flex container */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Center the items vertically */
+        width: 100%; /* Ensure navbar spans the full width */
+    }
+
+    .menu {
+        display: flex;  /* Keep the menu items in a row */
+        justify-content: center; /* Center the menu items horizontally */
+        width: auto; /* Make sure the width is determined by the content */
+        align-items: center; /* aligns the items vertically */
+        height: 100px;
+    }
+
+    .menu li {
+        margin: 0 10px; /* Less margin between items */
+    }
+
+    .menu li a {
+        font-size: px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center the text */
+    }
+}
+
+
+@media (max-width: 500px) {
+    nav .menu li a {
+        font-size: 25px;  /* Even smaller font size */
+        display: flex;
+        align-items: center; /* aligns the items vertically */
+        height: 100px;
+
+    }
+}
 
 /* HEADER */
 header img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 header {
@@ -130,7 +179,185 @@ header a:hover {
     background: #ffffff;
     color: #1c1c3a;
 }
+@media (max-width: 1450px) {
+    header .hero-content {
+        width: 35%;
+        padding-bottom: 100px;
+    }
+    header a {
+        font-size: 40px;
+    }
+}
 
+
+@media (max-width: 1240px) {
+    header .hero-content {
+        width: 35%;
+        padding-bottom: 150px;
+    }
+
+    header h1 {
+        font-size: 30px; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    header a {
+        font-size: 30px; /* Smaller font size for button */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 1035px) {
+    header .hero-content {
+        width: 35%;
+        padding-bottom: 250px;
+    }
+
+    header h1 {
+        font-size: 26px; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    header a {
+        font-size: 30px; /* Smaller font size for button */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 900px) {
+    header .hero-content {
+        width: 35%;
+        padding-bottom: 300px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 13px; /* Smaller font size */
+    }
+
+    header a {
+        font-size: 25px; /* Smaller font size for button */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 830px) {
+    header .hero-content {
+        width: 40%;
+        padding-bottom: 300px;
+    }
+
+    header h1 {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    header a {
+        font-size: 20px; /* Smaller font size for button */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 740px) {
+    header .hero-content {
+        width: 40%;
+        padding-bottom: 350px;
+    }
+
+    header h1 {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    header a {
+        font-size: 18px; /* Smaller font size for button */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 630px) {
+    header .hero-content {
+        width: 80%; /* Make the hero content take up more width on smaller screens */
+        left: 50%; /* Center horizontally */
+
+        padding: 10px; /* Reduce padding for smaller screens */
+        margin-left: 50px;
+    }
+
+    header h1 {
+        font-size: 40px; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 25px; /* Smaller font size */
+        margin-bottom: 25px;
+    }
+
+    header a {
+        font-size: 50px; /* Smaller font size for button */
+        padding: 10px 18px; /* Adjust button padding */
+    }
+}
+/* For smaller screens, adjust the positioning and scale */
+@media (max-width: 630px) {
+    header img {
+        width: 120%;                /* Increase width to zoom in */
+        height: 80vh;               /* Set height to control vertical size */
+        object-fit: cover;
+        object-position: 0 100%;    /* Focus on the right side */
+    }
+}
+
+@media (max-width: 500px) {
+    header .hero-content {
+        width: 100%; /* Full width of the container */
+        padding: 10px;
+        text-align: center; /* Center text */
+        margin: 0 auto; /* Center the content */
+        margin-left: 50px;
+    }
+
+    header h1 {
+        font-size: 35px; /* Smaller font size */
+        white-space: nowrap; /* Prevent wrapping of the heading */
+        margin: 0; /* Remove any margins */
+    }
+
+    header p {
+        font-size: 20px; /* Smaller font size */
+        margin-bottom: 25px;
+    }
+
+    header a {
+        font-size: 40px; /* Smaller font size for button */
+        padding: 10px 18px; /* Adjust button padding */
+    }
+}
+
+/* For smaller screens, adjust the positioning and scale */
+@media (max-width: 630px) {
+    header img {
+        width: 120%;                /* Increase width to zoom in */
+        height: 80vh;               /* Set height to control vertical size */
+        object-fit: cover;
+        object-position: 0 100%;    /* Focus on the right side */
+    }
+}
 
 /* FOOTER */
 footer {
