@@ -1,0 +1,148 @@
+/* GLOBAL STYLES */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #efe2d0;
+}
+.buttontop a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #1c1c3a;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* NAVBAR */
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background: #1c1c3a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 93%;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 15px;
+    padding-top: 7px;
+}
+
+nav li a {
+    font-family: "bangers";
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+nav img {
+    width: 200px;
+    height: auto;
+    max-height: 75px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+nav .toggle_btn {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* DROPDOWN MENU */
+nav .dropdown {
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+    height: 365px;
+}
+
+nav .dropdown li{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RESPONSIVE NAVBAR */
+
+@media (max-width: 1064px) {
+    nav .navbar li{
+        display: none;
+    }
+    nav .toggle_btn{
+        display: block;
+        margin-left: auto;
+    }
+    nav img {
+        /* HELP PLS */
+        }
+    nav .dropdown {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown {
+        left: 2rem;
+        width: unset;
+    }
+}
+    
+
+/* FOOTER */
+
+/* HEADER */
+.header-section {
+    margin-top: 90px;
+    position: relative;
+    background-image: url('/images/yugisetocropped.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    color: #fff;
+}
+
+
+
+/* FOOTER */
