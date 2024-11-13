@@ -233,6 +233,18 @@ section p {
     font-size: 18.5px;
 }
 
+#sec2 {
+    background-color: #f0e9e0;
+}
+
+#sec3 h5{
+    background-color: black;  
+    color: white;           
+    padding: 5px 10px;     
+    display: inline-block;   
+    border-radius: 14px;       
+}
+
 /* FOOTER */
     
 .footer1 {
