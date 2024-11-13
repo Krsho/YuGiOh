@@ -5,86 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beginners guide to Yu-Gi-Oh!</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&family=Rock+Salt&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap&family=Bangers&family=Press+Start+2P&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&family=Rock+Salt&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="/js/script.js"></script>
+    
 
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="logo"><a href="#"><img src="images/logo.png" alt="Yu-Gi-Oh! Logo"></a></div>
-            <ul class="menu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="how_to_play.html">How to play</a></li>
-                <li><a href="deck_building.html">Deck Building</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
+
+<nav>
+    <div class="navbar">
+        <div class="logo"><a href="home.html"><img src="images/logo.png" alt="Yu-Gi-Oh! Logo"></a></div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="how_to_play.html">How to play</a></li>
+            <li><a href="deck_building.html">Deck Building</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </nav>
-<header>
-<img src="/images/yugisetocropped.jpg" alt="Yugi and Seto" >
-<div class="hero-content" class="footer-container">
-    <h1><b> Welcome to Yu-Gi-Oh!</b></h1>
-    <p>Welcome to the Beginner's Guide to Yu-Gi-Oh! This guide will help you learn the basics of the game, from rules to strategies, so you can start playing and enjoying thrilling duels right away!</p>
-    <br>
-    <a href="#sec1">START LEARNING</a>
-  </div>
+    </div>
+
+    <div class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="how_to_play.html">How to play</a></li>
+        <li><a href="deck_building.html">Deck Building</a></li>
+        <li><a href="community.html">Community</a></li>
+    </div>
+</nav>
+
+<header class="header-section">
+        <div class="row h-100 align-items-center">
+                <div id="intro" class="col-10 col-md-10 col-lg-6 col-xl-4  offset-md-1 offset-1">
+                    <h1><b>Welcome to Yu-Gi-Oh!</b></h1>
+                    <p>Welcome to the Beginner's Guide to Yu-Gi-Oh! This guide will help you learn the basics of the game, from rules to strategies, so you can start playing and enjoying thrilling duels right away!</p>
+                    <br>
+                    <a href="#sec1" class="btn">START LEARNING</a>
+                </div>
+        </div>
 </header>
+
+
 <main>
-<section class="sec1">
-    <div class="container">
+
+<section id="sec1">
+    <div class="container-fluid p-5">
         <div class="row">
-            <div class="col-md-8">
-                <div class="content-box p-4">
-                    <h2>Main Content</h2>
-                    <p>This is the main content area taking 8 columns.</p>
+            <div class="col-md-8 text-center">
+                <h1>Your Starting Ultimate Guide <br> to Mastering the Game</h1><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <img src="/images/playing.png" class="rounded-top" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">How to Play</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <img src="/images/cards.png" class="rounded-top" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">Deck Building</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <img src="/images/locals.png" class="rounded-top" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">Community</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            
             <div class="col-md-4">
-                <div class="sidebar-box p-4">
-                    <h3>Sidebar Content</h3>
-                    <p>This is the sidebar content area taking 4 columns.</p>
+                    <br><h1><b>THE MASTERMIND</b></h1><br><br>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-0" id="bruh" >
+                            <br><img style="width: 265px;" src="/images/kazuki.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Kazuki Takahashi</h3> <br>
+                        <p>Kazuki Takahashi was a visionary Japanese manga artist best known as the creator of Yu-Gi-Oh!. Launched in 1996, Yu-Gi-Oh! combined storytelling with strategic gameplay, capturing fans worldwide. Takahashi's work not only led to a popular manga and anime but also inspired one of the best-selling trading card games ever created.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 </main>
+
 <footer>
-    <div class="footer-container">
-        <div class="footer-about">
-            <h3>About Us</h3>
-            <p>A comprehensive guide for beginners to master the game of Yu-Gi-Oh! Explore strategies, deck building tips, and community insights.</p>
-        </div>
-        
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="how_to_play.html">How to Play</a></li>
-                <li><a href="deck_building.html">Deck Building</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
+    <div class="footer1">
+        <div class="row1">
+            <a href="https://discord.gg/Zre7geRa"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/krsho0/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@thecalieffect"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61565194532235"><i class="fa-brands fa-facebook"></i></a>
         </div>
 
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <ul class="social-media">
-                <li><a href="#" target="_blank">Youtube</a></li>
-                <li><a href="#" target="_blank">Instagram</a></li>
-                <li><a href="#" target="_blank">Discord</a></li>
-            </ul>
+        <div class="row1">
+            <p>2024 Foundations of Web Development | Created by Faris Kršo</p>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Beginner's Guide to Yu-Gi-Oh! | Created by Faris Kršo</p>
-    </div>
 </footer>
+
+
+
 <div class="buttontop">
     <a href="javascript:void(0);" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></a>
 </div>
+
 </body>
 </html>
