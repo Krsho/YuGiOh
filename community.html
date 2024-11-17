@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginners guide to Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap&family=Bangers&family=Press+Start+2P&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&family=Rock+Salt&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+
+<nav>
+    <div class="navbar">
+        <div class="logo"><a href="home.html"><img src="images/logo.png" alt="Yu-Gi-Oh! Logo"></a></div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="how_to_play.html">How to play</a></li>
+            <li><a href="deck_building.html">Deck Building</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="how_to_play.html">How to play</a></li>
+        <li><a href="deck_building.html">Deck Building</a></li>
+        <li><a href="community.html">Community</a></li>
+    </div>
+</nav>
+
+<main>
+
+  <section id="tournament-info">
+    <div class="container-fluid p-0">
+      <div class="hero-image position-relative text-center text-white" style="background: url('images/background1.jpg') no-repeat center/cover; height: 400px;">
+        <div class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center" style="background: rgba(0, 0, 0, 0.5);">
+          <h1 class="display-4">Local Yu-Gi-Oh! Tournament</h1>
+          <p style="color: white;" class="lead">Join us for the ultimate duel of champions!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h2 class="text-center mb-4">Tournament Details</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Venue:</strong> Aria Shopping Mall</li>
+        <li class="list-group-item"><strong>Date:</strong> 23th November 2024</li>
+        <li class="list-group-item"><strong>Time:</strong> 10:30 AM - 4:00 PM</li>
+        <li class="list-group-item"><strong>Rules:</strong> Official Konami guidelines</li>
+        <li class="list-group-item"><strong>Prizes:</strong> Rare cards, merchandise, and packs</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <img src="images/turnir.jpg" class="img-fluid rounded" alt="Tournament at Aria">
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="images/tropik.jpg" class="img-fluid rounded" alt="Tropik">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section id="distance-calculator" class="py-5">
+  <div class="container text-center">
+    <h2>Find Your Distance to the Tournament Venue</h2>
+    <p>Click the button below to calculate your distance to the tournament venue at Aria Shopping Mall.</p>
+    <br><p style="font-size: 15px;"><i>If it displays "Unable to retrieve your location." please use another browser</i></p>
+    <button id="calculate-distance" class="btn btn-primary mt-3">Calculate Distance</button>
+    <p id="distance-result" class="mt-4 text-info" style="font-size: 1.5rem;"></p>
+  </div>
+</section>
+
+<section id="table" class="p-5">
+  <div class="container my-4">
+    <h2 class="text-center">Tuzla Regionals Results</h2><br>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>Placement</th>
+            <th>Player</th>
+            <th>Archetypes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Winner</td>
+            <td>🇷🇸 Marko Bundalo</td>
+            <td><span class="badge bg-warning text-dark">Mimighoul</span></td>
+          </tr>
+          <tr>
+            <td>Runner-Up</td>
+            <td>🇧🇦 Meric Lihic</td>
+            <td><span class="badge bg-info text-dark">Tenpai Dragon</span></td>
+          </tr>
+          <tr>
+            <td>Top 4</td>
+            <td>🇷🇸 Ivan Stojakovic</td>
+            <td><span class="badge bg-danger">Fire King</span></td>
+          </tr>
+          <tr>
+            <td>Top 4</td>
+            <td>🇷🇸 Nikola Spasic</td>
+            <td><span class="badge bg-danger">Snake-Eye</span></td>
+          </tr>
+          <tr>
+            <td>Top 8</td>
+            <td>🇷🇸 Djordje Nikolic</td>
+            <td><span class="badge bg-danger">Snake-Eye</span></td>
+          </tr>
+          <tr>
+            <td>Top 8</td>
+            <td>🇷🇸 Aleksandar Josipovic</td>
+            <td><span class="badge bg-success">Salamangreat</span></td>
+          </tr>
+          <tr>
+            <td>Top 8</td>
+            <td>🇷🇸 Kristijan Stankovic</td>
+            <td><span class="badge bg-primary">Dragon Link</span></td>
+          </tr>
+          <tr>
+            <td>Top 8</td>
+            <td>🇧🇦 Armin Porca</td>
+            <td><span class="badge bg-secondary">Chimera</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="form" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Sign Up for Our Local Yu-Gi-Oh! Tournament</h2>
+    <form id="tournamentForm" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" class="form-control" required min="13" max="100" placeholder="Enter your age">
+      </div>
+
+      <div class="form-group">
+        <label for="experience">Experience Level:</label>
+        <select id="experience" name="experience" class="form-control" required>
+          <option value="">Select your experience level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="deck">Deck Type:</label>
+        <input type="text" id="deck" name="deck" class="form-control" required placeholder="Enter your deck type (e.g., Blue-Eyes)">
+      </div>
+
+      <div class="form-group">
+        <label for="favoriteCard">Favorite Card:</label>
+        <input type="text" id="favoriteCard" name="favoriteCard" class="form-control" required placeholder="Enter your favorite Yu-Gi-Oh! card">
+      </div>
+
+      <div class="form-group">
+        <label for="tournamentPreferences">Tournament Preferences (Optional):</label>
+        <textarea id="tournamentPreferences" name="tournamentPreferences" class="form-control" rows="3" placeholder="Enter any preferences you have"></textarea>
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" id="agree" name="agree" class="form-check-input" required>
+        <label class="form-check-label" for="agree">I agree to the tournament rules and regulations</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer1">
+        <div class="row1">
+            <a href="https://discord.gg/Zre7geRa"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/krsho0/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@thecalieffect"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61565194532235"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+        <div class="row1">
+            <p>2024 Foundations of Web Development | Created by Faris Kršo</p>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

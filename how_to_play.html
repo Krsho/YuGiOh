@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginners guide to Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap&family=Bangers&family=Press+Start+2P&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&family=Rock+Salt&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+
+<nav>
+    <div class="navbar">
+        <div class="logo"><a href="home.html"><img src="images/logo.png" alt="Yu-Gi-Oh! Logo"></a></div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="how_to_play.html">How to play</a></li>
+            <li><a href="deck_building.html">Deck Building</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="how_to_play.html">How to play</a></li>
+        <li><a href="deck_building.html">Deck Building</a></li>
+        <li><a href="community.html">Community</a></li>
+    </div>
+</nav>
+
+<main>
+
+<section style="margin-top: 90px;" id="video-section" class="container-fluid p-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <h1>Learn How to Play Yu-Gi-Oh!</h1><br>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe 
+                    class="embed-responsive-item" 
+                    src="https://www.youtube.com/embed/bGZOiTcHLzM" 
+                    title="How to Play Yu-Gi-Oh!" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="card-types" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Card Types</h2>
+        <br><p><i>Click on a card to learn more about it!</i></p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/dk.jpg" alt="Monster Card" class="img-fluid mb-3" data-toggle="modal" data-target="#monsterModal">
+                <h4>Monster Cards</h4>
+            </div>
+
+            <div class="col-md-4">
+                <img src="images/dh.jpg" alt="Spell Card" class="img-fluid mb-3" data-toggle="modal" data-target="#spellModal">
+                <h4>Spell Cards</h4>
+            </div>
+
+            <div class="col-md-4">
+                <img src="images/tp.webp" alt="Trap Card" class="img-fluid mb-3" data-toggle="modal" data-target="#trapModal">
+                <h4>Trap Cards</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="monsterModal" tabindex="-1" aria-labelledby="monsterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="monsterModalLabel">Monster Cards</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    Monster Cards are used to attack your opponent and defend your Life Points. They have Levels, Attributes, and Types.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="spellModal" tabindex="-1" aria-labelledby="spellModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="spellModalLabel">Spell Cards</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    Spell Cards provide various effects to support your strategy. They can be played during your Main Phase.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="trapModal" tabindex="-1" aria-labelledby="trapModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="trapModalLabel">Trap Cards</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    Trap Cards are activated in response to your opponent's moves. Set them face-down first, and then activate at the right moment.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="game-phases" class="container py-5">
+    <h2 class="text-center mb-4">Phases of the Game</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Draw Phase</h5>
+          </div>
+          <div class="card-body">
+            <p>At the beginning of the turn, the player draws one card from their deck.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Standby Phase</h5>
+          </div>
+          <div class="card-body">
+            <p>Effects that activate during this phase, such as continuous effects, are triggered here.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Main Phase 1</h5>
+          </div>
+          <div class="card-body">
+            <p>This is when you can summon monsters, activate spells, and set traps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Battle Phase</h5>
+          </div>
+          <div class="card-body">
+            <p>The player can attack their opponent's monsters or life points here.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Main Phase 2</h5>
+          </div>
+          <div class="card-body">
+            <p>After the Battle Phase, players can perform additional actions like setting monsters or spells.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">End Phase</h5>
+          </div>
+          <div class="card-body">
+            <p>Effects that activate during the End Phase are triggered here, and the turn ends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="winning-conditions">
+<div  class="container py-5">
+  <h2 class="text-center mb-4">Winning Conditions</h2>
+
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6 order-md-1">
+      <img src="images/lp.png" alt="Life Points" class="img-fluid">
+    </div>
+    <div class="col-md-6 order-md-2">
+      <h5>Reduce Opponent's Life Points to 0</h5>
+      <p>The primary way to win the game is by reducing your opponent's Life Points to 0 through direct attacks or effect damage.</p>
+    </div>
+  </div>
+<hr>
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6 order-md-2">
+      <img src="images/do.png" alt="Deck Out" class="img-fluid">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h5>Deck Out</h5>
+      <p>If your opponent is unable to draw a card during the Draw Phase because their deck is empty, they lose the game.</p>
+    </div>
+  </div>
+<hr>
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6 order-md-1">
+      <img src="images/ex.jpg" alt="Special Victory" class="img-fluid">
+    </div>
+    <div class="col-md-6 order-md-2">
+      <h5>Special Victory Conditions</h5>
+      <p>There are certain cards that allow players to win the game under specific conditions, such as "Exodia the Forbidden One" or "Destiny Board."</p>
+    </div>
+  </div>
+<hr>
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6 order-md-2">
+      <img src="images/timer.jpg" alt="Time Limit" class="img-fluid">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h5>Time Limit</h5>
+      <p>In tournament settings, if time runs out, the game ends, and the player with the most Life Points remaining wins.</p>
+    </div>
+  </div>
+</div>
+</section>
+  
+</main>
+
+<footer>
+    <div class="footer1">
+        <div class="row1">
+            <a href="https://discord.gg/Zre7geRa"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/krsho0/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@thecalieffect"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61565194532235"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+        <div class="row1">
+            <p>2024 Foundations of Web Development | Created by Faris Kršo</p>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
